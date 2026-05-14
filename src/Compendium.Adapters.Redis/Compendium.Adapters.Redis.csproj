@@ -5,13 +5,16 @@
     <RootNamespace>Compendium.Adapters.Redis</RootNamespace>
     <PackageId>Compendium.Adapters.Redis</PackageId>
     <Description>Redis Idempotency Store adapter for Compendium Framework: Distributed idempotency tracking using Redis, prevents duplicate command processing in event-driven systems.</Description>
+    <PackageTags>compendium;adapter;redis;idempotency;cache</PackageTags>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\Compendium.Core\Compendium.Core.csproj" />
-    <ProjectReference Include="..\..\Abstractions\Compendium.Abstractions\Compendium.Abstractions.csproj" />
-    <ProjectReference Include="..\..\Application\Compendium.Application\Compendium.Application.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\Compendium.Infrastructure\Compendium.Infrastructure.csproj" />
+    <!-- Compendium framework — consumed as published NuGets per ADR-0006. -->
+    <PackageReference Include="Compendium.Core" />
+    <PackageReference Include="Compendium.Abstractions" />
+    <PackageReference Include="Compendium.Application" />
+    <PackageReference Include="Compendium.Infrastructure" />
   </ItemGroup>
 
   <ItemGroup>

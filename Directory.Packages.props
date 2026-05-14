@@ -25,7 +25,7 @@
     <PackageVersion Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Http" Version="9.0.0" />
-    <PackageVersion Include="StackExchange.Redis" Version="2.9.32" />
+    <PackageVersion Include="StackExchange.Redis" Version="2.13.1" />
   </ItemGroup>
 
   <!-- Test stack (matches the framework's testing conventions exactly) -->
